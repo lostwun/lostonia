@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "stage-1",
+    "react",
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": ["transform-class-properties"],
+  "env": {
+    "test": {
+      "presets": ["env", "react"],
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}
